@@ -5,12 +5,18 @@ Variables       ../PageObject/locators.py
 *** Variables ***
 ${url}      https://www.amazon.in/s?k=dell+computers&i=electronics&rh=p_36%3A3000000-5000000&qid=1695272769&rnid=1318502031&ref=sr_nr_p_36_5
 ${browser}      chrome
-
 *** Test Cases ***
-amazon
-    Oepn browser     ${url}    ${browser}
-    sleep    5
-    Items with rating 5
+Open Chrome browser using ${url} and ${browser}
+Search Website     ${googlesearchText}
+Select From Search in DropDown      ${selectdropdownItem}
+Enter search text in search box      ${SearcProduct}
+Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
+Items with rating 5
+#*** Test Cases ***
+#amazon
+#    Oepn browser     ${url}    ${browser}
+#    sleep    5
+#    Items with rating 5
 
 *** Keywords ***
 Oepn browser

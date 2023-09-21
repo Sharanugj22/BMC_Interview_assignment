@@ -2,32 +2,27 @@
 Library    SeleniumLibrary
 Variables       ../PageObject/locators.py
 Library     DataDriver     ../TestData/TestData.csv
-Suite Setup     Oepn browser
-#*** Variables ***
-#${url}      https://www.google.com
-#${browser}      chrome
-#${googlesearchText}     Amazon
-#${selectdropdownItem}       Electronics
-#${SearcProduct}     Dell computers
-#${lowerPrice}    30000
-#${higherrPrice}     50000
+
+*** Variables ***
+${url}      https://www.google.com
+${browser}      chrome
+${googlesearchText}     Amazon
+${selectdropdownItem}       Electronics
+${SearcProduct}     Dell computers
+${lowerPrice}    30000
+${higherrPrice}     50000
 
 *** Test Cases ***
-Login with ${url}    ${browser}
-Search Website     ${googlesearchText}
-Select From Search in DropDown      ${selectdropdownItem}
-Enter search text in search box      ${SearcProduct}
-Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
-Items with rating 5
-#amazon
-#    Oepn browser     ${url}    ${browser}
-#    Search Website     ${googlesearchText}
-#    Select From Search in DropDown      ${selectdropdownItem}
-#    Enter search text in search box      ${SearcProduct}
-#    Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
-#    Items with rating 5
+
+amazon
+    Open browser     ${url}    ${browser}
+    Search Website     ${googlesearchText}
+    Select From Search in DropDown      ${selectdropdownItem}
+    Enter search text in search box      ${SearcProduct}
+    Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
+    Items with rating 5
 *** Keywords ***
-Oepn browser
+Open Chrome browser
     [Arguments]     ${url}    ${browser}
     Open Browser   ${url}    ${browser}
     set selenium implicit wait    10
@@ -81,4 +76,3 @@ Items with rating 5
         switch window    ${curloc}
 
     END
-
