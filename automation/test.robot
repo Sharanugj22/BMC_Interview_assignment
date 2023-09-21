@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Variables       ../PageObject/locators.py
-Library     DataDriver     ../TestData/TestData.csv
+#Library     DataDriver     ../TestData/TestData.csv
 
 *** Variables ***
 ${url}      https://www.google.com
@@ -47,9 +47,6 @@ Apply Filter for range value
     input text      ${filter_lowerPrice}      ${lowerPrice}
     input text      ${filter_higherPrice}     ${higherrPrice}
     click element       ${btn_Go}
-    #click element       xpath://span[@id='a-autoid-1-announce']
-#    ${text}       get text      xpath://*[contains(@class,'sg-col-20-of-24 s-result-item s-asin sg-col-0-of-12 sg-col-16-of')]
-#    log to console      ${text}
     ${count}       get element count      ${count_elements}
     log to console      ${count}
     ${itellist}       get webelements      ${get_element_list}
