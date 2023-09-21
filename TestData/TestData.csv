@@ -1,2 +1,2 @@
-${url};${browser};${google_searchText};${selectdropdownItem};${SearcProduct};${lowerPrice};${higherrPrice}
+${url};${browser};${google_searchText};${selectdropdownItem};${SearchProduct};${lowerPrice};${higherrPrice}
 https://www.google.com;chrome;Amozon;Electronics;Dell computers;30000;50000

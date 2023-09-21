@@ -28,7 +28,7 @@ Acces amazon using ${url} ${browser}    ${google_searchText}   ${selectdropdownI
 #    Items with rating 5
 *** Keywords ***
 Open Chrome browser
-    [Arguments]     ${url}    ${browser}    ${google_searchText}    ${selectdropdownItem}   ${SearcProduct}     ${lowerPrice}       ${higherrPrice}
+    [Arguments]     ${url}    ${browser}    ${google_searchText}    ${selectdropdownItem}   ${SearchProduct}     ${lowerPrice}       ${higherrPrice}
     Open Browser   ${url}    ${browser}
     set selenium implicit wait    10
     Maximize Browser Window
