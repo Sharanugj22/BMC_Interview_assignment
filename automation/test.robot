@@ -1,49 +1,54 @@
 *** Settings ***
 Library    SeleniumLibrary
 Variables       ../PageObject/locators.py
-#Library     DataDriver     ../TestData/TestData.csv
+Library     DataDriver     ../TestData/TestData.csv
+Test Template    Open Chrome browser
 
-*** Variables ***
-${url}      https://www.google.com
-${browser}      chrome
-${googlesearchText}     Amazon
-${selectdropdownItem}       Electronics
-${SearcProduct}     Dell computers
-${lowerPrice}    30000
-${higherrPrice}     50000
+#*** Variables ***
+#${url}      https://www.google.com
+#${browser}      chrome
+#${googlesearchText}     Amazon
+#${selectdropdownItem}       Electronics
+#${SearcProduct}     Dell computers
+#${lowerPrice}    30000
+#${higherrPrice}     50000
+
 
 *** Test Cases ***
+Acces amazon using ${url} ${browser}    ${google_searchText}   ${selectdropdownItem}    ${SearchProduct}     ${lowerPrice}   ${higherrPrice}
 
-amazon
-    Open browser     ${url}    ${browser}
-    Search Website     ${googlesearchText}
-    Select From Search in DropDown      ${selectdropdownItem}
-    Enter search text in search box      ${SearcProduct}
-    Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
-    Items with rating 5
+
+#*** Test Cases ***
+#amazon
+#    Open browser     ${url}    ${browser}
+#    Search Website     ${googlesearchText}
+#    Select From Search in DropDown      ${selectdropdownItem}
+#    Enter search text in search box      ${SearcProduct}
+#    Apply Filter for range value     ${lowerPrice}       ${higherrPrice}
+#    Items with rating 5
 *** Keywords ***
 Open Chrome browser
-    [Arguments]     ${url}    ${browser}
+    [Arguments]     ${url}    ${browser}    ${google_searchText}    ${selectdropdownItem}   ${SearcProduct}     ${lowerPrice}       ${higherrPrice}
     Open Browser   ${url}    ${browser}
     set selenium implicit wait    10
     Maximize Browser Window
 
-Search Website
-    [Arguments]     ${serchText}
-    input text      ${GoogleSearch_txt}     ${serchText}
+#Search Website
+#    [Arguments]     ${googlesearchText}
+    input text      ${GoogleSearch_txt}     ${googlesearchText}
     press keys      ${GoogleSearch_PressKeys}     ENTER
     click element    ${ClickOnLink}
-Select From Search in DropDown
-    [Arguments]     ${selectdropdownItem}
+#Select From Search in DropDown
+#    [Arguments]     ${selectdropdownItem}
     select from list by label    ${SelectFromDropDown}      ${selectdropdownItem}
 
-Enter search text in search box
-    [Arguments]     ${SearchProduct}
+#Enter search text in search box
+#    [Arguments]     ${SearchProduct}
     input text      ${Search_Item}        ${SearchProduct}
     click element       ${Icon_Search_Click}
 
-Apply Filter for range value
-    [Arguments]    ${lowerPrice}    ${higherrPrice}
+#Apply Filter for range value
+#    [Arguments]    ${lowerPrice}    ${higherrPrice}
     input text      ${filter_lowerPrice}      ${lowerPrice}
     input text      ${filter_higherPrice}     ${higherrPrice}
     click element       ${btn_Go}
@@ -57,7 +62,7 @@ Apply Filter for range value
  #       log to console    ${title}
     END
 
-Items with rating 5
+#Items with rating 5
     ${5ratingcount}     get element count      ${count_5_stars_rating}
     ${curloc}  get title
     log to console      Number of 5 stars products count is: ${5ratingcount}
