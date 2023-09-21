@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.9.11 on win32)" generated="20230921 18:53:35.916" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.9.11 on win32)" generated="20230921 19:03:15.667" rpa="false" schemaversion="4">
 <suite id="s1" name="Test" source="C:\Users\DELL\PycharmProjects\robotframework\automation\test.robot">
 <test id="s1-t1" name="Acces amazon using https://www.google.com chrome" line="18">
 <kw name="Open Chrome browser">
@@ -14,199 +14,303 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230921 18:53:45.134" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20230921 18:53:45.134" endtime="20230921 18:54:31.618"/>
+<msg timestamp="20230921 19:03:22.558" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20230921 19:03:22.558" endtime="20230921 19:04:52.866"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230921 18:54:31.618" endtime="20230921 18:54:31.621"/>
+<status status="PASS" starttime="20230921 19:04:52.866" endtime="20230921 19:04:52.866"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230921 18:54:31.621" endtime="20230921 18:54:32.481"/>
+<status status="PASS" starttime="20230921 19:04:52.866" endtime="20230921 19:05:07.740"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${GoogleSearch_txt}</arg>
 <arg>${googlesearchText}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 18:54:32.483" level="INFO">Typing text 'Amozon' into text field 'xpath://textarea[@id='APjFqb']'.</msg>
-<status status="PASS" starttime="20230921 18:54:32.481" endtime="20230921 18:54:34.783"/>
+<msg timestamp="20230921 19:05:07.749" level="INFO">Typing text 'Amozon' into text field 'xpath://textarea[@id='APjFqb']'.</msg>
+<status status="PASS" starttime="20230921 19:05:07.741" endtime="20230921 19:05:11.696"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${GoogleSearch_PressKeys}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20230921 18:54:34.786" level="INFO">Sending key(s) ('ENTER',) to xpath://textarea[@id='APjFqb'] element.</msg>
-<msg timestamp="20230921 18:54:36.652" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20230921 18:54:36.653" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20230921 18:54:34.784" endtime="20230921 18:54:46.127"/>
+<msg timestamp="20230921 19:05:11.711" level="INFO">Sending key(s) ('ENTER',) to xpath://textarea[@id='APjFqb'] element.</msg>
+<msg timestamp="20230921 19:05:15.923" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230921 19:05:15.923" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230921 19:05:11.697" endtime="20230921 19:05:37.497"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ClickOnLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230921 18:54:46.129" level="INFO">Clicking element 'xpath://h3[contains(text(),'Amazon.in')]'.</msg>
-<status status="PASS" starttime="20230921 18:54:46.128" endtime="20230921 18:55:19.509"/>
+<msg timestamp="20230921 19:05:37.499" level="INFO">Clicking element 'xpath://h3[contains(text(),'Amazon.in')]'.</msg>
+<status status="PASS" starttime="20230921 19:05:37.498" endtime="20230921 19:06:06.944"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${SelectFromDropDown}</arg>
 <arg>${selectdropdownItem}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230921 18:55:19.512" level="INFO">Selecting options from selection list 'xpath://select[@id='searchDropdownBox']' by label Electronics.</msg>
-<status status="PASS" starttime="20230921 18:55:19.510" endtime="20230921 18:55:36.087"/>
+<msg timestamp="20230921 19:06:06.956" level="INFO">Selecting options from selection list 'xpath://select[@id='searchDropdownBox']' by label Electronics.</msg>
+<status status="PASS" starttime="20230921 19:06:06.945" endtime="20230921 19:06:14.677"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Search_Item}</arg>
 <arg>${SearchProduct}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 18:55:36.097" level="FAIL">Variable '${SearchProduct}' not found. Did you mean:
-    ${SearcProduct}</msg>
-<status status="FAIL" starttime="20230921 18:55:36.088" endtime="20230921 18:55:36.097"/>
+<msg timestamp="20230921 19:06:14.680" level="INFO">Typing text 'Dell computers' into text field 'xpath://input[@id='twotabsearchtextbox']'.</msg>
+<status status="PASS" starttime="20230921 19:06:14.678" endtime="20230921 19:06:15.247"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Icon_Search_Click}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.099" endtime="20230921 18:55:36.099"/>
+<msg timestamp="20230921 19:06:15.361" level="INFO">Clicking element 'xpath: //input[@id='nav-search-submit-button']'.</msg>
+<status status="PASS" starttime="20230921 19:06:15.247" endtime="20230921 19:06:55.659"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${filter_lowerPrice}</arg>
 <arg>${lowerPrice}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.099" endtime="20230921 18:55:36.099"/>
+<msg timestamp="20230921 19:06:55.660" level="INFO">Typing text '30000' into text field 'xpath://input[@id='low-price']'.</msg>
+<status status="PASS" starttime="20230921 19:06:55.659" endtime="20230921 19:06:55.968"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${filter_higherPrice}</arg>
 <arg>${higherrPrice}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.100" endtime="20230921 18:55:36.100"/>
+<msg timestamp="20230921 19:06:55.969" level="INFO">Typing text '50000' into text field 'xpath://input[@id='high-price']'.</msg>
+<status status="PASS" starttime="20230921 19:06:55.968" endtime="20230921 19:06:56.136"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_Go}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.100" endtime="20230921 18:55:36.101"/>
+<msg timestamp="20230921 19:06:56.293" level="INFO">Clicking element 'xpath://input[@class='a-button-input']'.</msg>
+<status status="PASS" starttime="20230921 19:06:56.136" endtime="20230921 19:07:03.839"/>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${count}</var>
 <arg>${count_elements}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.101" endtime="20230921 18:55:36.101"/>
+<msg timestamp="20230921 19:07:04.067" level="INFO">${count} = 30</msg>
+<status status="PASS" starttime="20230921 19:07:03.839" endtime="20230921 19:07:04.067"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.102" endtime="20230921 18:55:36.102"/>
+<status status="PASS" starttime="20230921 19:07:04.244" endtime="20230921 19:07:04.265"/>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>${itellist}</var>
 <arg>${get_element_list}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.103" endtime="20230921 18:55:36.103"/>
+<msg timestamp="20230921 19:07:04.311" level="INFO">${itellist} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c56e0494fe7707b43c11510d32a949ad", element="C027E41F604A56683EC1791DD3F9DE8F_element_236")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230921 19:07:04.266" endtime="20230921 19:07:04.311"/>
 </kw>
 <kw name="Get Location" library="SeleniumLibrary">
 <var>${currUrl1}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.104" endtime="20230921 18:55:36.104"/>
+<msg timestamp="20230921 19:07:04.381" level="INFO">${currUrl1} = https://www.amazon.in/s?k=Dell+computers&amp;i=electronics&amp;rh=p_36%3A3000000-5000000&amp;qid=1695303383&amp;rnid=1318502031&amp;ref=sr_nr_p_36_5</msg>
+<status status="PASS" starttime="20230921 19:07:04.311" endtime="20230921 19:07:04.381"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
 <value>1</value>
 <value>${count}</value>
 <iter>
-<var name="${i}"/>
+<var name="${i}">1</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.288" endtime="20230921 18:55:36.288"/>
+<msg timestamp="20230921 19:07:05.548" level="INFO">${title} = Sponsored
+Acer Aspire C24 23.8 inch Full HD IPS All in One Desktop I Intel Core i3 1005G1 I 8GB DDR4 I 512GB SSD I Windows 11 Home I MS Office Home &amp; Student 2021 I Full HD Camera, Black
+3.9
+69
+₹44,99...</msg>
+<status status="PASS" starttime="20230921 19:07:04.993" endtime="20230921 19:07:05.637"/>
 </kw>
-<status status="NOT RUN" starttime="20230921 18:55:36.287" endtime="20230921 18:55:36.288"/>
+<status status="PASS" starttime="20230921 19:07:04.977" endtime="20230921 19:07:05.637"/>
 </iter>
-<status status="NOT RUN" starttime="20230921 18:55:36.287" endtime="20230921 18:55:36.288"/>
-</for>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<var>${5ratingcount}</var>
-<arg>${count_5_stars_rating}</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.288" endtime="20230921 18:55:36.288"/>
-</kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${curloc}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.288" endtime="20230921 18:55:36.288"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>Number of 5 stars products count is: ${5ratingcount}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.289"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.289"/>
-</kw>
-<kw name="Get Location" library="SeleniumLibrary">
-<var>${currloc}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.289"/>
-</kw>
-<for flavor="IN RANGE">
-<var>${i}</var>
-<value>1</value>
-<value>30</value>
 <iter>
-<var name="${i}"/>
+<var name="${i}">2</var>
 <kw name="Get Text" library="SeleniumLibrary">
-<var>${linkText}</var>
-<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.289"/>
+<msg timestamp="20230921 19:07:06.328" level="INFO">${title} = Sponsored
+Acer Veriton Core i3 10105T Processor (Windows 11 Home, 8GB RAM, 512 GB SSD) with WiFi, Wireless Keyboard and Mouse, 3.6 KG
+1.0
+1
+Deal of the Day
+₹32,299 M.R.P:
+₹45,999 (30% off)
+Save extra ...</msg>
+<status status="PASS" starttime="20230921 19:07:05.805" endtime="20230921 19:07:06.328"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${linkText}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.290" endtime="20230921 18:55:36.290"/>
-</kw>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.415" endtime="20230921 18:55:36.415"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.416" endtime="20230921 18:55:36.416"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.416" endtime="20230921 18:55:36.416"/>
-</kw>
-<kw name="Switch Window" library="SeleniumLibrary">
-<arg>${curloc}</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="NOT RUN" starttime="20230921 18:55:36.416" endtime="20230921 18:55:36.416"/>
-</kw>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.417"/>
+<status status="PASS" starttime="20230921 19:07:05.638" endtime="20230921 19:07:06.647"/>
 </iter>
-<status status="NOT RUN" starttime="20230921 18:55:36.289" endtime="20230921 18:55:36.417"/>
-</for>
-<status status="FAIL" starttime="20230921 18:53:45.134" endtime="20230921 18:55:36.417"/>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:06.846" level="INFO">${title} = Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4, 512GB SSD, 14.0" (35.56Cms) FHD WVA AG 250 nits, Windows 11 + MSO'21, McAfee 15 Months, Carbon Black, 1.48Kgs
+5.0
+3
+₹46,590 M.R.P:
+₹68,145 (32% off)
+...</msg>
+<status status="PASS" starttime="20230921 19:07:06.647" endtime="20230921 19:07:06.846"/>
 </kw>
-<status status="FAIL" starttime="20230921 18:53:45.118" endtime="20230921 18:55:37.391">Variable '${SearchProduct}' not found. Did you mean:
-    ${SearcProduct}</status>
-</test>
-<status status="FAIL" starttime="20230921 18:53:35.963" endtime="20230921 18:55:37.575"/>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<status status="PASS" starttime="20230921 19:07:06.647" endtime="20230921 19:07:06.846"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.034" level="INFO">${title} = Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB/ 512GB /14.0"(35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black Color/1.48kg
+4.0
+201
+D...</msg>
+<status status="PASS" starttime="20230921 19:07:06.846" endtime="20230921 19:07:07.034"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:06.846" endtime="20230921 19:07:07.034"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.418" level="INFO">${title} = (Refurbished) Dell Vostro 3420 Laptop, Intel i3-1115G4, 8GB DDR4 &amp; 512GB SSD, Win 11 + MSO'21, 14.0" (35
+1.0
+1
+₹31,016 New Price:
+₹36,490 (15% off)
+Save extra with No Cost EMI
+FREE delivery Sat, 23 Se...</msg>
+<status status="PASS" starttime="20230921 19:07:07.034" endtime="20230921 19:07:07.418"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.034" endtime="20230921 19:07:07.418"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.546" level="INFO">${title} = Dell New_2022 Inspiron Desktop 3910 MT || Intel Core i3-12th Generation || 8GB Ram || 1TB HDD +256 GB_M.2_SSD || Windows 11 Home+Office 2021 || 1 Yr_Warranty || Worth 999 Brand_Headphone ( Black )
+3.9...</msg>
+<status status="PASS" starttime="20230921 19:07:07.418" endtime="20230921 19:07:07.546"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.418" endtime="20230921 19:07:07.546"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.718" level="INFO">${title} = (Refurbished) Dell Latitude 7400 Laptop - 14.0" FHD AG W/ IR Cam - 1.9 GHz Intel Core i7-8665U Quad-Core
+4.6
+6
+₹31,895 M.R.P.:
+₹98,900 (67% off)
+Save extra with No Cost EMI
+FREE delivery Tue, 26 Sept
+...</msg>
+<status status="PASS" starttime="20230921 19:07:07.546" endtime="20230921 19:07:07.718"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.546" endtime="20230921 19:07:07.718"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.829" level="INFO">${title} = (Refurbished) Dell Vostro 3420 Laptop, Intel Core i5-1135G7, 8GB/ 512GB SSD/ 14.0" FHD WVA AG 250 nits/W
+1.0
+1
+₹41,216
+50 New Price:
+₹48,490 (15% off)
+Save extra with No Cost EMI
+FREE delivery Sat, 23...</msg>
+<status status="PASS" starttime="20230921 19:07:07.718" endtime="20230921 19:07:07.829"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.718" endtime="20230921 19:07:07.829"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:07.942" level="INFO">${title} = Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/512GB SSD/15.6" (39.62CMs) FHD WVA AG Narrow Border 120Hz 250 nits/Windows 11+MSO'21/15 Month McAfee/Carbon Black/1.68KGs
+4.0
+7
+Deal of the Day
+₹35,99...</msg>
+<status status="PASS" starttime="20230921 19:07:07.845" endtime="20230921 19:07:07.942"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.830" endtime="20230921 19:07:07.942"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:08.051" level="INFO">${title} = (Refurbished) Dell Intel DELL LATITUDE 7490 Windows 10 Pro - CORE i7 8TH GEN/8GB/512GB SSD/WEBCAM/14'' T
+2.7
+54
+₹30,295 M.R.P.:
+₹60,000 (49% off)
+Save extra with No Cost EMI
+FREE delivery Fri, 29 Sept...</msg>
+<status status="PASS" starttime="20230921 19:07:07.942" endtime="20230921 19:07:08.051"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:07.942" endtime="20230921 19:07:08.051"/>
+</iter>
+<iter>
+<var name="${i}">11</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:08.208" level="INFO">${title} = Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8GB/ 512GB/15.6" (39.62cm) FHD with Comfort View/Mobile Connect/Backlit KB + FPR/Windows 11 + MSO'21/15 Months McAfee/Dark Silver/ 1.69kg
+3.8
+78
+Deal of...</msg>
+<status status="PASS" starttime="20230921 19:07:08.051" endtime="20230921 19:07:08.208"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:08.051" endtime="20230921 19:07:08.208"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:08.361" level="INFO">${title} = Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &amp; 512GB SSD/14.0" (35.56cm) FHD, TUV Rheinland Certified Comfortview Reduce Harmful Blue Light Emissions/ Windows11+MSO'21/15 Month McAfee/Black/1.48kg...</msg>
+<status status="PASS" starttime="20230921 19:07:08.208" endtime="20230921 19:07:08.361"/>
+</kw>
+<status status="PASS" starttime="20230921 19:07:08.208" endtime="20230921 19:07:08.361"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:07:08.476" level="INFO">${title} = Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8GB/ 512GB/ 14.0" (35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black/ 1.48kg
+3.1
+38
+Deal...</msg>
+<status status="PASS" starttime="20230921 19:07:08.361" endtime="20230921 19:07:08.476"/>
+</kw>
