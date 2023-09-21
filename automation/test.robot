@@ -66,7 +66,7 @@ Open Chrome browser
     ${5ratingcount}     get element count      ${count_5_stars_rating}
     ${curloc}  get title
     log to console      Number of 5 stars products count is: ${5ratingcount}
-    sleep    2
+    sleep    5
     ${currloc}      get location
 #    log to console    ${currloc}
     FOR    ${i}    IN RANGE    1    30

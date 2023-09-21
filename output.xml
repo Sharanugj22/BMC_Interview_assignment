@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.9.11 on win32)" generated="20230921 19:03:15.667" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.9.11 on win32)" generated="20230921 19:10:37.663" rpa="false" schemaversion="4">
 <suite id="s1" name="Test" source="C:\Users\DELL\PycharmProjects\robotframework\automation\test.robot">
 <test id="s1-t1" name="Acces amazon using https://www.google.com chrome" line="18">
 <kw name="Open Chrome browser">
@@ -14,104 +14,104 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230921 19:03:22.558" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20230921 19:03:22.558" endtime="20230921 19:04:52.866"/>
+<msg timestamp="20230921 19:11:05.112" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20230921 19:11:05.112" endtime="20230921 19:12:52.480"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230921 19:04:52.866" endtime="20230921 19:04:52.866"/>
+<status status="PASS" starttime="20230921 19:12:52.480" endtime="20230921 19:12:52.490"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230921 19:04:52.866" endtime="20230921 19:05:07.740"/>
+<status status="PASS" starttime="20230921 19:12:52.493" endtime="20230921 19:12:55.538"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${GoogleSearch_txt}</arg>
 <arg>${googlesearchText}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 19:05:07.749" level="INFO">Typing text 'Amozon' into text field 'xpath://textarea[@id='APjFqb']'.</msg>
-<status status="PASS" starttime="20230921 19:05:07.741" endtime="20230921 19:05:11.696"/>
+<msg timestamp="20230921 19:12:55.539" level="INFO">Typing text 'Amozon' into text field 'xpath://textarea[@id='APjFqb']'.</msg>
+<status status="PASS" starttime="20230921 19:12:55.538" endtime="20230921 19:13:00.277"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${GoogleSearch_PressKeys}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20230921 19:05:11.711" level="INFO">Sending key(s) ('ENTER',) to xpath://textarea[@id='APjFqb'] element.</msg>
-<msg timestamp="20230921 19:05:15.923" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20230921 19:05:15.923" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20230921 19:05:11.697" endtime="20230921 19:05:37.497"/>
+<msg timestamp="20230921 19:13:00.280" level="INFO">Sending key(s) ('ENTER',) to xpath://textarea[@id='APjFqb'] element.</msg>
+<msg timestamp="20230921 19:13:04.601" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230921 19:13:04.601" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230921 19:13:00.278" endtime="20230921 19:13:30.425"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ClickOnLink}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:05:37.499" level="INFO">Clicking element 'xpath://h3[contains(text(),'Amazon.in')]'.</msg>
-<status status="PASS" starttime="20230921 19:05:37.498" endtime="20230921 19:06:06.944"/>
+<msg timestamp="20230921 19:13:30.428" level="INFO">Clicking element 'xpath://h3[contains(text(),'Amazon.in')]'.</msg>
+<status status="PASS" starttime="20230921 19:13:30.425" endtime="20230921 19:13:54.416"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${SelectFromDropDown}</arg>
 <arg>${selectdropdownItem}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230921 19:06:06.956" level="INFO">Selecting options from selection list 'xpath://select[@id='searchDropdownBox']' by label Electronics.</msg>
-<status status="PASS" starttime="20230921 19:06:06.945" endtime="20230921 19:06:14.677"/>
+<msg timestamp="20230921 19:13:54.419" level="INFO">Selecting options from selection list 'xpath://select[@id='searchDropdownBox']' by label Electronics.</msg>
+<status status="PASS" starttime="20230921 19:13:54.417" endtime="20230921 19:14:01.901"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Search_Item}</arg>
 <arg>${SearchProduct}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 19:06:14.680" level="INFO">Typing text 'Dell computers' into text field 'xpath://input[@id='twotabsearchtextbox']'.</msg>
-<status status="PASS" starttime="20230921 19:06:14.678" endtime="20230921 19:06:15.247"/>
+<msg timestamp="20230921 19:14:01.903" level="INFO">Typing text 'Dell computers' into text field 'xpath://input[@id='twotabsearchtextbox']'.</msg>
+<status status="PASS" starttime="20230921 19:14:01.902" endtime="20230921 19:14:06.306"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Icon_Search_Click}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:06:15.361" level="INFO">Clicking element 'xpath: //input[@id='nav-search-submit-button']'.</msg>
-<status status="PASS" starttime="20230921 19:06:15.247" endtime="20230921 19:06:55.659"/>
+<msg timestamp="20230921 19:14:06.310" level="INFO">Clicking element 'xpath: //input[@id='nav-search-submit-button']'.</msg>
+<status status="PASS" starttime="20230921 19:14:06.307" endtime="20230921 19:14:30.983"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${filter_lowerPrice}</arg>
 <arg>${lowerPrice}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 19:06:55.660" level="INFO">Typing text '30000' into text field 'xpath://input[@id='low-price']'.</msg>
-<status status="PASS" starttime="20230921 19:06:55.659" endtime="20230921 19:06:55.968"/>
+<msg timestamp="20230921 19:14:30.985" level="INFO">Typing text '30000' into text field 'xpath://input[@id='low-price']'.</msg>
+<status status="PASS" starttime="20230921 19:14:30.983" endtime="20230921 19:14:31.358"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${filter_higherPrice}</arg>
 <arg>${higherrPrice}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230921 19:06:55.969" level="INFO">Typing text '50000' into text field 'xpath://input[@id='high-price']'.</msg>
-<status status="PASS" starttime="20230921 19:06:55.968" endtime="20230921 19:06:56.136"/>
+<msg timestamp="20230921 19:14:31.360" level="INFO">Typing text '50000' into text field 'xpath://input[@id='high-price']'.</msg>
+<status status="PASS" starttime="20230921 19:14:31.358" endtime="20230921 19:14:31.926"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_Go}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:06:56.293" level="INFO">Clicking element 'xpath://input[@class='a-button-input']'.</msg>
-<status status="PASS" starttime="20230921 19:06:56.136" endtime="20230921 19:07:03.839"/>
+<msg timestamp="20230921 19:14:31.927" level="INFO">Clicking element 'xpath://input[@class='a-button-input']'.</msg>
+<status status="PASS" starttime="20230921 19:14:31.926" endtime="20230921 19:14:39.127"/>
 </kw>
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${count}</var>
 <arg>${count_elements}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20230921 19:07:04.067" level="INFO">${count} = 30</msg>
-<status status="PASS" starttime="20230921 19:07:03.839" endtime="20230921 19:07:04.067"/>
+<msg timestamp="20230921 19:14:39.188" level="INFO">${count} = 30</msg>
+<status status="PASS" starttime="20230921 19:14:39.128" endtime="20230921 19:14:39.188"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230921 19:07:04.244" endtime="20230921 19:07:04.265"/>
+<status status="PASS" starttime="20230921 19:14:39.188" endtime="20230921 19:14:39.189"/>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>${itellist}</var>
 <arg>${get_element_list}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20230921 19:07:04.311" level="INFO">${itellist} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="c56e0494fe7707b43c11510d32a949ad", element="C027E41F604A56683EC1791DD3F9DE8F_element_236")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
-<status status="PASS" starttime="20230921 19:07:04.266" endtime="20230921 19:07:04.311"/>
+<msg timestamp="20230921 19:14:39.223" level="INFO">${itellist} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e68fb661f57029a22ccb217f6cf5739f", element="C7331BBBE1D458E99D4775CBF5A8DC12_element_238")&gt;, &lt;selenium.webdriver.remote.webelement.WebElemen...</msg>
+<status status="PASS" starttime="20230921 19:14:39.189" endtime="20230921 19:14:39.223"/>
 </kw>
 <kw name="Get Location" library="SeleniumLibrary">
 <var>${currUrl1}</var>
 <doc>Returns the current browser window URL.</doc>
-<msg timestamp="20230921 19:07:04.381" level="INFO">${currUrl1} = https://www.amazon.in/s?k=Dell+computers&amp;i=electronics&amp;rh=p_36%3A3000000-5000000&amp;qid=1695303383&amp;rnid=1318502031&amp;ref=sr_nr_p_36_5</msg>
-<status status="PASS" starttime="20230921 19:07:04.311" endtime="20230921 19:07:04.381"/>
+<msg timestamp="20230921 19:14:39.274" level="INFO">${currUrl1} = https://www.amazon.in/s?k=Dell+computers&amp;i=electronics&amp;rh=p_36%3A3000000-5000000&amp;crid=2P32ZEYXPJYBP&amp;qid=1695303851&amp;rnid=1318502031&amp;sprefix=%2Celectronics%2C378&amp;ref=sr_nr_p_36_5</msg>
+<status status="PASS" starttime="20230921 19:14:39.224" endtime="20230921 19:14:39.274"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -123,14 +123,14 @@
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:05.548" level="INFO">${title} = Sponsored
+<msg timestamp="20230921 19:14:40.088" level="INFO">${title} = Sponsored
 Acer Aspire C24 23.8 inch Full HD IPS All in One Desktop I Intel Core i3 1005G1 I 8GB DDR4 I 512GB SSD I Windows 11 Home I MS Office Home &amp; Student 2021 I Full HD Camera, Black
 3.9
-69
-₹44,99...</msg>
-<status status="PASS" starttime="20230921 19:07:04.993" endtime="20230921 19:07:05.637"/>
+(69)
+₹44,...</msg>
+<status status="PASS" starttime="20230921 19:14:39.275" endtime="20230921 19:14:40.160"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:04.977" endtime="20230921 19:07:05.637"/>
+<status status="PASS" starttime="20230921 19:14:39.275" endtime="20230921 19:14:40.160"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -138,17 +138,17 @@ Acer Aspire C24 23.8 inch Full HD IPS All in One Desktop I Intel Core i3 1005G1 
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:06.328" level="INFO">${title} = Sponsored
+<msg timestamp="20230921 19:14:40.274" level="INFO">${title} = Sponsored
 Acer Veriton Core i3 10105T Processor (Windows 11 Home, 8GB RAM, 512 GB SSD) with WiFi, Wireless Keyboard and Mouse, 3.6 KG
 1.0
-1
+(1)
 Deal of the Day
 ₹32,299 M.R.P:
 ₹45,999 (30% off)
-Save extra ...</msg>
-<status status="PASS" starttime="20230921 19:07:05.805" endtime="20230921 19:07:06.328"/>
+Save extr...</msg>
+<status status="PASS" starttime="20230921 19:14:40.161" endtime="20230921 19:14:40.274"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:05.638" endtime="20230921 19:07:06.647"/>
+<status status="PASS" starttime="20230921 19:14:40.160" endtime="20230921 19:14:40.274"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -156,15 +156,14 @@ Save extra ...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:06.846" level="INFO">${title} = Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4, 512GB SSD, 14.0" (35.56Cms) FHD WVA AG 250 nits, Windows 11 + MSO'21, McAfee 15 Months, Carbon Black, 1.48Kgs
+<msg timestamp="20230921 19:14:40.387" level="INFO">${title} = Dell Vostro 3425 Laptop, Ryzen R5-5625U, 8GB DDR4, 512GB SSD, 14.0" (35.56Cms) FHD WVA AG 250 nits, Windows 11 + MSO'21, McAfee 15 Months, Carbon Black, 1.48Kgs
 5.0
-3
+(3)
 ₹46,590 M.R.P:
-₹68,145 (32% off)
-...</msg>
-<status status="PASS" starttime="20230921 19:07:06.647" endtime="20230921 19:07:06.846"/>
+₹68,145 (32% off...</msg>
+<status status="PASS" starttime="20230921 19:14:40.274" endtime="20230921 19:14:40.387"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:06.647" endtime="20230921 19:07:06.846"/>
+<status status="PASS" starttime="20230921 19:14:40.274" endtime="20230921 19:14:40.387"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -172,13 +171,12 @@ Save extra ...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.034" level="INFO">${title} = Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB/ 512GB /14.0"(35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black Color/1.48kg
+<msg timestamp="20230921 19:14:40.522" level="INFO">${title} = Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/ 8GB/ 512GB /14.0"(35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black Color/1.48kg
 4.0
-201
-D...</msg>
-<status status="PASS" starttime="20230921 19:07:06.846" endtime="20230921 19:07:07.034"/>
+(201)...</msg>
+<status status="PASS" starttime="20230921 19:14:40.387" endtime="20230921 19:14:40.522"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:06.846" endtime="20230921 19:07:07.034"/>
+<status status="PASS" starttime="20230921 19:14:40.387" endtime="20230921 19:14:40.522"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -186,16 +184,16 @@ D...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.418" level="INFO">${title} = (Refurbished) Dell Vostro 3420 Laptop, Intel i3-1115G4, 8GB DDR4 &amp; 512GB SSD, Win 11 + MSO'21, 14.0" (35
+<msg timestamp="20230921 19:14:40.677" level="INFO">${title} = (Refurbished) Dell Vostro 3420 Laptop, Intel i3-1115G4, 8GB DDR4 &amp; 512GB SSD, Win 11 + MSO'21, 14.0" (35
 1.0
-1
+(1)
 ₹31,016 New Price:
 ₹36,490 (15% off)
 Save extra with No Cost EMI
-FREE delivery Sat, 23 Se...</msg>
-<status status="PASS" starttime="20230921 19:07:07.034" endtime="20230921 19:07:07.418"/>
+Get it by Tomorrow, 22...</msg>
+<status status="PASS" starttime="20230921 19:14:40.522" endtime="20230921 19:14:40.677"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.034" endtime="20230921 19:07:07.418"/>
+<status status="PASS" starttime="20230921 19:14:40.522" endtime="20230921 19:14:40.678"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -203,11 +201,13 @@ FREE delivery Sat, 23 Se...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.546" level="INFO">${title} = Dell New_2022 Inspiron Desktop 3910 MT || Intel Core i3-12th Generation || 8GB Ram || 1TB HDD +256 GB_M.2_SSD || Windows 11 Home+Office 2021 || 1 Yr_Warranty || Worth 999 Brand_Headphone ( Black )
-3.9...</msg>
-<status status="PASS" starttime="20230921 19:07:07.418" endtime="20230921 19:07:07.546"/>
+<msg timestamp="20230921 19:14:40.784" level="INFO">${title} = (Refurbished) Dell Latitude 7390 8th Gen Intel Core i7 Thin &amp; Light Business FHD Laptop (16 GB DDR4 RAM/512 GB SSD/13.3" (33.8 cm) FHD/Windows 11/MS Office/WiFi/Webcam/Integrated Graphics)
+4.0
+(6)
+₹31...</msg>
+<status status="PASS" starttime="20230921 19:14:40.678" endtime="20230921 19:14:40.784"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.418" endtime="20230921 19:07:07.546"/>
+<status status="PASS" starttime="20230921 19:14:40.678" endtime="20230921 19:14:40.785"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -215,17 +215,13 @@ FREE delivery Sat, 23 Se...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.718" level="INFO">${title} = (Refurbished) Dell Latitude 7400 Laptop - 14.0" FHD AG W/ IR Cam - 1.9 GHz Intel Core i7-8665U Quad-Core
-4.6
-6
-₹31,895 M.R.P.:
-₹98,900 (67% off)
-Save extra with No Cost EMI
-FREE delivery Tue, 26 Sept
-...</msg>
-<status status="PASS" starttime="20230921 19:07:07.546" endtime="20230921 19:07:07.718"/>
+<msg timestamp="20230921 19:14:40.873" level="INFO">${title} = (Refurbished) Dell Latitude Laptop 5490 Intel Core i5 7th Gen -Processor , 16 GB Ram &amp; 2TB SSD, 14 Inches FHD 1080p Screen Notebook Computer
+₹32,529 M.R.P.:
+₹1,00,000 (67% off)
+10% Off on Select Bank ...</msg>
+<status status="PASS" starttime="20230921 19:14:40.786" endtime="20230921 19:14:40.874"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.546" endtime="20230921 19:07:07.718"/>
+<status status="PASS" starttime="20230921 19:14:40.785" endtime="20230921 19:14:40.874"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -233,17 +229,14 @@ FREE delivery Tue, 26 Sept
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.829" level="INFO">${title} = (Refurbished) Dell Vostro 3420 Laptop, Intel Core i5-1135G7, 8GB/ 512GB SSD/ 14.0" FHD WVA AG 250 nits/W
-1.0
-1
-₹41,216
-50 New Price:
-₹48,490 (15% off)
-Save extra with No Cost EMI
-FREE delivery Sat, 23...</msg>
-<status status="PASS" starttime="20230921 19:07:07.718" endtime="20230921 19:07:07.829"/>
+<msg timestamp="20230921 19:14:40.975" level="INFO">${title} = Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/512GB SSD/15.6" (39.62CMs) FHD WVA AG Narrow Border 120Hz 250 nits/Windows 11+MSO'21/15 Month McAfee/Carbon Black/1.68KGs
+4.0
+(7)
+Deal of the Day
+₹35,...</msg>
+<status status="PASS" starttime="20230921 19:14:40.874" endtime="20230921 19:14:40.975"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.718" endtime="20230921 19:07:07.829"/>
+<status status="PASS" starttime="20230921 19:14:40.874" endtime="20230921 19:14:40.975"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -251,14 +244,16 @@ FREE delivery Sat, 23...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:07.942" level="INFO">${title} = Dell Inspiron 3525 Laptop, AMD Ryzen R3-5300U/8GB/512GB SSD/15.6" (39.62CMs) FHD WVA AG Narrow Border 120Hz 250 nits/Windows 11+MSO'21/15 Month McAfee/Carbon Black/1.68KGs
-4.0
-7
-Deal of the Day
-₹35,99...</msg>
-<status status="PASS" starttime="20230921 19:07:07.845" endtime="20230921 19:07:07.942"/>
+<msg timestamp="20230921 19:14:41.089" level="INFO">${title} = (Refurbished) Dell Intel DELL LATITUDE 7490 Windows 10 Pro - CORE i7 8TH GEN/8GB/512GB SSD/WEBCAM/14'' T
+2.7
+(54)
+₹30,295 M.R.P.:
+₹60,000 (49% off)
+Save extra with No Cost EMI
+Get it by Friday, 29 Sep...</msg>
+<status status="PASS" starttime="20230921 19:14:40.975" endtime="20230921 19:14:41.089"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.830" endtime="20230921 19:07:07.942"/>
+<status status="PASS" starttime="20230921 19:14:40.975" endtime="20230921 19:14:41.089"/>
 </iter>
 <iter>
 <var name="${i}">10</var>
@@ -266,16 +261,13 @@ Deal of the Day
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:08.051" level="INFO">${title} = (Refurbished) Dell Intel DELL LATITUDE 7490 Windows 10 Pro - CORE i7 8TH GEN/8GB/512GB SSD/WEBCAM/14'' T
-2.7
-54
-₹30,295 M.R.P.:
-₹60,000 (49% off)
-Save extra with No Cost EMI
-FREE delivery Fri, 29 Sept...</msg>
-<status status="PASS" starttime="20230921 19:07:07.942" endtime="20230921 19:07:08.051"/>
+<msg timestamp="20230921 19:14:41.186" level="INFO">${title} = Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8GB/ 512GB/15.6" (39.62cm) FHD with Comfort View/Mobile Connect/Backlit KB + FPR/Windows 11 + MSO'21/15 Months McAfee/Dark Silver/ 1.69kg
+3.8
+(78)
+Deal ...</msg>
+<status status="PASS" starttime="20230921 19:14:41.089" endtime="20230921 19:14:41.186"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:07.942" endtime="20230921 19:07:08.051"/>
+<status status="PASS" starttime="20230921 19:14:41.089" endtime="20230921 19:14:41.186"/>
 </iter>
 <iter>
 <var name="${i}">11</var>
@@ -283,13 +275,10 @@ FREE delivery Fri, 29 Sept...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:08.208" level="INFO">${title} = Dell 15 Laptop, Intel Core i5-1135G7 Processor/ 8GB/ 512GB/15.6" (39.62cm) FHD with Comfort View/Mobile Connect/Backlit KB + FPR/Windows 11 + MSO'21/15 Months McAfee/Dark Silver/ 1.69kg
-3.8
-78
-Deal of...</msg>
-<status status="PASS" starttime="20230921 19:07:08.051" endtime="20230921 19:07:08.208"/>
+<msg timestamp="20230921 19:14:41.296" level="INFO">${title} = Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &amp; 512GB SSD/14.0" (35.56cm) FHD, TUV Rheinland Certified Comfortview Reduce Harmful Blue Light Emissions/ Windows11+MSO'21/15 Month McAfee/Black/1.48kg...</msg>
+<status status="PASS" starttime="20230921 19:14:41.186" endtime="20230921 19:14:41.296"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:08.051" endtime="20230921 19:07:08.208"/>
+<status status="PASS" starttime="20230921 19:14:41.186" endtime="20230921 19:14:41.296"/>
 </iter>
 <iter>
 <var name="${i}">12</var>
@@ -297,10 +286,13 @@ Deal of...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:08.361" level="INFO">${title} = Dell 14 Laptop, Intel 12th Gen Core i3-1215U/8GB &amp; 512GB SSD/14.0" (35.56cm) FHD, TUV Rheinland Certified Comfortview Reduce Harmful Blue Light Emissions/ Windows11+MSO'21/15 Month McAfee/Black/1.48kg...</msg>
-<status status="PASS" starttime="20230921 19:07:08.208" endtime="20230921 19:07:08.361"/>
+<msg timestamp="20230921 19:14:41.405" level="INFO">${title} = Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8GB/ 512GB/ 14.0" (35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black/ 1.48kg
+3.1
+(38)
+De...</msg>
+<status status="PASS" starttime="20230921 19:14:41.296" endtime="20230921 19:14:41.405"/>
 </kw>
-<status status="PASS" starttime="20230921 19:07:08.208" endtime="20230921 19:07:08.361"/>
+<status status="PASS" starttime="20230921 19:14:41.296" endtime="20230921 19:14:41.405"/>
 </iter>
 <iter>
 <var name="${i}">13</var>
@@ -308,9 +300,399 @@ Deal of...</msg>
 <var>${title}</var>
 <arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230921 19:07:08.476" level="INFO">${title} = Dell 14 AMD Laptop, AMD Ryzen 5 Series R5-5500U/ 8GB/ 512GB/ 14.0" (35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black/ 1.48kg
-3.1
-38
-Deal...</msg>
-<status status="PASS" starttime="20230921 19:07:08.361" endtime="20230921 19:07:08.476"/>
+<msg timestamp="20230921 19:14:41.505" level="INFO">${title} = Dell 14 Laptop, Intel Core i3-1115G4, 8GB DDR4, 512GB SSD, 14.0" (35.56Ccm) FHD + TÜV Rheinland Certified Comfort View-Reduce Harmful Blue Light/Windows 11+ MSO'21/15 Month McAfee/Dark Silver/1.48kg
+3...</msg>
+<status status="PASS" starttime="20230921 19:14:41.405" endtime="20230921 19:14:41.505"/>
 </kw>
+<status status="PASS" starttime="20230921 19:14:41.405" endtime="20230921 19:14:41.505"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:41.619" level="INFO">${title} = Dell 14 Laptop, Intel Core i5-1135G7 Processor/ 8GB/ 512GB SSD/14.0" (35.56cm) FHD Display with Comfort View/Windows 11 + MSO'21/ Spill-Resistant Keyboard/ 15 Month McAfee/Black /1.48kg
+3.8
+(111)
+Deal...</msg>
+<status status="PASS" starttime="20230921 19:14:41.505" endtime="20230921 19:14:41.619"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:41.505" endtime="20230921 19:14:41.619"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:41.716" level="INFO">${title} = Sponsored
+Dell Inspiron 3511 Laptop, Intel Core i3-1115G4, 15.6" (39.6Cms) FHD WVA AG Narrow Border, 8GB, 256GB SSD, Win11 + MSO'21, Platinum Silver Color (D560649WIN9S, 1.8Kgs)
+3.4
+(47)
+₹37,990 M.R.P...</msg>
+<status status="PASS" starttime="20230921 19:14:41.619" endtime="20230921 19:14:41.716"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:41.619" endtime="20230921 19:14:41.716"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:41.826" level="INFO">${title} = Sponsored
+Dell New Inspiron 3511 Laptop,11th Gen Intel Core I3-1115G4, Windows 11 + MSO'21, 8Gb, 512Gb SSD, 15.6" (39.62Cms) FHD WVA Ag, Platinum Silver (D560749Win9S, 1.8Kgs)
+3.5
+(40)
+₹40,940 M.R.P:
+...</msg>
+<status status="PASS" starttime="20230921 19:14:41.716" endtime="20230921 19:14:41.826"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:41.716" endtime="20230921 19:14:41.826"/>
+</iter>
+<iter>
+<var name="${i}">17</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:41.935" level="INFO">${title} = Dell 15 Laptop, Intel Core i3-1115G4, 8GB/1TB + 256GB SSD/15.6" (39.62cm) FHD with Comfort View/Mobile Connect/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon/ 1.69kg
+3.3
+(8)
+Deal ...</msg>
+<status status="PASS" starttime="20230921 19:14:41.826" endtime="20230921 19:14:41.935"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:41.826" endtime="20230921 19:14:41.935"/>
+</iter>
+<iter>
+<var name="${i}">18</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.061" level="INFO">${title} = Dell Vostro 3510 Laptop, Intel i3-1115G4, 8GB/512GB SSD/15.6" (39.62cm) FHD, TÜV Rheinland Certified Comfortview Reduce Harmful Blue Light Emissions/Win 11 + MSO'21/15 Months McAfee/Dark Silver/1.69kg...</msg>
+<status status="PASS" starttime="20230921 19:14:41.951" endtime="20230921 19:14:42.061"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:41.951" endtime="20230921 19:14:42.061"/>
+</iter>
+<iter>
+<var name="${i}">19</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.174" level="INFO">${title} = Dell 14 AMD Laptop, Ryzen 3-5425U/8GB DDR4/256GB SSD/Windows 11 + MSO'21/14.0"(35.56 cm) FHD, TÜV Rheinland Certified Comfortview Reduce Harmful Blue light/15 Month McAfee/Carbon Black/1.48kg
+3.7
+(20)...</msg>
+<status status="PASS" starttime="20230921 19:14:42.061" endtime="20230921 19:14:42.174"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.061" endtime="20230921 19:14:42.174"/>
+</iter>
+<iter>
+<var name="${i}">20</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.265" level="INFO">${title} = Dell Inspiron 3520 Laptop,12th Gen Intel Core i3-1215, Windows 11 + MSO'21, McAfee 15 Months, 8GB, 512GB SSD, 15.6" (39.62Cms) 3 Sided Narrow Border Design with 120Hz FHD Display, Black, 1.65Kgs
+3.4
+(...</msg>
+<status status="PASS" starttime="20230921 19:14:42.174" endtime="20230921 19:14:42.265"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.174" endtime="20230921 19:14:42.265"/>
+</iter>
+<iter>
+<var name="${i}">21</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.359" level="INFO">${title} = Dell 14 Laptop, Intel Core 12th Generation i3-1215U/ 8GB/ 512GB SSD/ 14.0"(35.56cm) FHD with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Dark Silver/Spill-Resistant Keyboard/ 1.48kg
+4.5
+(2)
+₹44,9...</msg>
+<status status="PASS" starttime="20230921 19:14:42.265" endtime="20230921 19:14:42.359"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.265" endtime="20230921 19:14:42.359"/>
+</iter>
+<iter>
+<var name="${i}">22</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.482" level="INFO">${title} = Dell Vostro 3520 Laptop, Intel i3-1115G4/8GB/512GB SSD/15.6" (39.62cm) FHD AG 120Hz 250 nits Narrow Border/Win11+MSO'21/15 Month McAfee/Carbon Black/1.66kg
+4.5
+(2)
+Deal of the Day
+₹38,490 M.R.P:
+₹49,8...</msg>
+<status status="PASS" starttime="20230921 19:14:42.359" endtime="20230921 19:14:42.482"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.359" endtime="20230921 19:14:42.482"/>
+</iter>
+<iter>
+<var name="${i}">23</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.580" level="INFO">${title} = Dell 13th Gen Laptop, Intel Core i3-1305U Processor/ 8GB/ 512GB SSD/ 14.0" (35.56cm) FHD with Comfort View/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Carbon Black/ 1.46kg
+4.0
+(201)
+D...</msg>
+<status status="PASS" starttime="20230921 19:14:42.483" endtime="20230921 19:14:42.580"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.483" endtime="20230921 19:14:42.580"/>
+</iter>
+<iter>
+<var name="${i}">24</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.680" level="INFO">${title} = Dell Inspiron 3520 Laptop,11th Gen Intel Core i3-1115G4, Windows 11 + MSO'21, McAfee 15 Months, 8GB, 512GB SSD, 15.6" (39.62Cms) 3 Sided Narrow Border Design with 120Hz FHD Display, Black, 1.65Kgs
+5.0...</msg>
+<status status="PASS" starttime="20230921 19:14:42.580" endtime="20230921 19:14:42.681"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.580" endtime="20230921 19:14:42.681"/>
+</iter>
+<iter>
+<var name="${i}">25</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.758" level="INFO">${title} = Dell 14 Laptop,12th Gen Intel Core i3-1215U/8GB &amp; 512GB SSD/14.0"(35.56cm) FHD, TÜV Rheinland Certified Comfortview Reduce Harmful Blue Light Emissions/Windows11+MSO'21/15 Month McAfee/Black/1.48kg
+₹4...</msg>
+<status status="PASS" starttime="20230921 19:14:42.681" endtime="20230921 19:14:42.758"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.681" endtime="20230921 19:14:42.758"/>
+</iter>
+<iter>
+<var name="${i}">26</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.867" level="INFO">${title} = Dell Inspiron 3511 Laptop, Intel Core i3-1115G4/8GB/256GB SSD/15.6" (39.62cm) 3-Sided Narrow Border Design with FHD Display/Windows 11 + MSO'21/McAfee 15 Months/Platinum Silver/1.8kg
+3.5
+(3)
+₹38,054 M...</msg>
+<status status="PASS" starttime="20230921 19:14:42.758" endtime="20230921 19:14:42.867"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.758" endtime="20230921 19:14:42.867"/>
+</iter>
+<iter>
+<var name="${i}">27</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:42.961" level="INFO">${title} = Dell 14 Laptop, Intel Core 11th Gen i3-1115G4/8GB DDR4/256GB SSD/Windows 11 + MSO'21/14.0" (35.56cm) FHD with Comfort View/ 15 Month McAfee/Spill-Resistant Keyboard/Black Color/ 1.48kg
+3.8
+(111)
+₹34,9...</msg>
+<status status="PASS" starttime="20230921 19:14:42.867" endtime="20230921 19:14:42.977"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.867" endtime="20230921 19:14:42.977"/>
+</iter>
+<iter>
+<var name="${i}">28</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:43.070" level="INFO">${title} = Dell Inspiron 3535 Laptop, AMD 7 Series Ryzen5 R5-7520U Processor/8GB/512GB/15.6" (39.62cm) FHD WVA AG 120Hz 250 nits Display/Win 11 + MSO'21/15 Month McAfee/Carbon Black/1.63kg
+4.0
+(2)
+₹45,990 M.R.P:...</msg>
+<status status="PASS" starttime="20230921 19:14:42.977" endtime="20230921 19:14:43.070"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:42.977" endtime="20230921 19:14:43.070"/>
+</iter>
+<iter>
+<var name="${i}">29</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${title}</var>
+<arg>xpath:(//*[contains(@class,'sg-col-20-of-24 s-r')])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:43.185" level="INFO">${title} = Sponsored
+Dell Inspiron 3511 Laptop, Intel Core i5-1135G7, 8GB, 512GB SSD, 15.6" (39.62cm) 3 Sided Narrow Border Design with FHD Display/Windows 11 + MSO'21/McAfee 15 Months/Carbon Black/1.8kg
+3.9
+(63...</msg>
+<status status="PASS" starttime="20230921 19:14:43.070" endtime="20230921 19:14:43.185"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:43.070" endtime="20230921 19:14:43.185"/>
+</iter>
+<status status="PASS" starttime="20230921 19:14:39.274" endtime="20230921 19:14:43.186"/>
+</for>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${5ratingcount}</var>
+<arg>${count_5_stars_rating}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20230921 19:14:43.214" level="INFO">${5ratingcount} = 2</msg>
+<status status="PASS" starttime="20230921 19:14:43.186" endtime="20230921 19:14:43.214"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${curloc}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230921 19:14:43.222" level="INFO">${curloc} = Amazon.in : Dell computers</msg>
+<status status="PASS" starttime="20230921 19:14:43.214" endtime="20230921 19:14:43.222"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Number of 5 stars products count is: ${5ratingcount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230921 19:14:43.223" endtime="20230921 19:14:43.223"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230921 19:14:48.365" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230921 19:14:43.223" endtime="20230921 19:14:48.365"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${currloc}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20230921 19:14:48.381" level="INFO">${currloc} = https://www.amazon.in/s?k=Dell+computers&amp;i=electronics&amp;rh=p_36%3A3000000-5000000&amp;crid=2P32ZEYXPJYBP&amp;qid=1695303851&amp;rnid=1318502031&amp;sprefix=%2Celectronics%2C378&amp;ref=sr_nr_p_36_5</msg>
+<status status="PASS" starttime="20230921 19:14:48.365" endtime="20230921 19:14:48.381"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>30</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${linkText}</var>
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:48.491" level="INFO">${linkText} = </msg>
+<status status="PASS" starttime="20230921 19:14:48.381" endtime="20230921 19:14:48.491"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230921 19:14:48.506" endtime="20230921 19:14:48.506"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230921 19:14:48.506" endtime="20230921 19:14:48.875"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:48.876" level="INFO">Clicking element 'xpath:(//span[normalize-space()='5.0']//preceding::div[2])[1]'.</msg>
+<status status="PASS" starttime="20230921 19:14:48.875" endtime="20230921 19:14:49.452"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230921 19:14:54.460" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230921 19:14:49.453" endtime="20230921 19:14:54.460"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${curloc}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230921 19:14:54.460" endtime="20230921 19:14:57.356"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:48.381" endtime="20230921 19:14:57.356"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${linkText}</var>
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:57.425" level="INFO">${linkText} = </msg>
+<status status="PASS" starttime="20230921 19:14:57.357" endtime="20230921 19:14:57.425"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230921 19:14:57.426" endtime="20230921 19:14:57.427"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230921 19:14:57.427" endtime="20230921 19:14:57.797"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:14:57.798" level="INFO">Clicking element 'xpath:(//span[normalize-space()='5.0']//preceding::div[2])[2]'.</msg>
+<status status="PASS" starttime="20230921 19:14:57.797" endtime="20230921 19:14:58.235"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230921 19:15:03.253" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230921 19:14:58.235" endtime="20230921 19:15:03.254"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${curloc}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230921 19:15:03.254" endtime="20230921 19:15:05.679"/>
+</kw>
+<status status="PASS" starttime="20230921 19:14:57.356" endtime="20230921 19:15:05.680"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${linkText}</var>
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230921 19:15:16.139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230921 19:15:16.139" level="FAIL">Element with locator 'xpath:(//span[normalize-space()='5.0']//preceding::div[2])[3]' not found.</msg>
+<status status="FAIL" starttime="20230921 19:15:05.680" endtime="20230921 19:15:16.281"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230921 19:15:16.281" endtime="20230921 19:15:16.281"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20230921 19:15:16.281" endtime="20230921 19:15:16.281"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//span[normalize-space()='5.0']//preceding::div[2])[${i}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230921 19:15:16.281" endtime="20230921 19:15:16.281"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230921 19:15:16.281" endtime="20230921 19:15:16.281"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${curloc}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20230921 19:15:16.281" endtime="20230921 19:15:16.281"/>
+</kw>
+<status status="FAIL" starttime="20230921 19:15:05.680" endtime="20230921 19:15:16.281"/>
+</iter>
+<status status="FAIL" starttime="20230921 19:14:48.381" endtime="20230921 19:15:16.281"/>
+</for>
+<status status="FAIL" starttime="20230921 19:11:05.112" endtime="20230921 19:15:16.281"/>
+</kw>
+<status status="FAIL" starttime="20230921 19:11:05.112" endtime="20230921 19:15:16.281">Element with locator 'xpath:(//span[normalize-space()='5.0']//preceding::div[2])[3]' not found.</status>
+</test>
+<status status="FAIL" starttime="20230921 19:10:37.676" endtime="20230921 19:15:16.297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
